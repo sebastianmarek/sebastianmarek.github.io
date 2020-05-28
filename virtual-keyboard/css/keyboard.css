@@ -1,0 +1,80 @@
+.keyboard-container {
+    margin: 100px 0 0 0;
+    flex: 1 0 auto;
+    width: 681px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    flex: 1 0 auto;
+    min-height: 150px;
+    resize: vertical;
+    margin: 0 0 2em 0;
+    font-size: 1rem;
+    outline: none;
+}
+
+.keyboard {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.keyboard-key {
+    flex: 0 0 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
+    background: #494949;
+    color: #f0f0f0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.keyboard-functionkey {
+    font-size: 0.6rem;
+}
+
+.keyboard-key:active {
+    background: #141414;
+}
+
+.keyboard-key-active {
+    background: #141414;
+}
+
+.keyboard-double-width {
+    flex: 1 0 4rem;
+}
+
+.keyboard-one-and-half-width {
+    flex: 0 0 3rem;
+}
+
+.keyboard-spacebar {
+    flex: 1 0 11rem;
+}
+
+.keyboard-double-label {
+    font-size: 0.6rem;
+}
+
+.keyboard-two-and-half-width {
+    flex: 1 0 5rem;
+}
+
+.keyboard-tripple-width {
+    flex: 1 0 6rem;
+}
+
+.keyboard-enter {
+    flex: 1 0 4rem;
+}
+
+
