@@ -182,7 +182,7 @@ class Keyboard {
 
           document.addEventListener('keydown', (event) => {
             if (event.code === 'Space') {
-              this.updateValue('.text-input');
+              this.refreshCursorPosition();
               keyElement.classList.add('keyboard-key-active');
             }
           });
