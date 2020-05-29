@@ -135,7 +135,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'CapsLock') {
+            if (!event.repeat && event.code === 'CapsLock') {
               this.toggleCapsLock();
               keyElement.classList.toggle('keyboard-key-active');
             }
@@ -268,7 +268,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'ControlLeft') {
+            if (!event.repeat && event.code === 'ControlLeft') {
               this.toggleCtrl();
               Keyboard.toggleClassOnNodes('.keyboard-ctrl', 'keyboard-key-active');
             }
@@ -295,7 +295,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'ControlRight') {
+            if (!event.repeat && event.code === 'ControlRight') {
               this.toggleCtrl();
               this.toggleClassOnNodes('.keyboard-ctrl', 'keyboard-key-active');
             }
@@ -322,7 +322,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'ShiftLeft') {
+            if (!event.repeat && event.code === 'ShiftLeft') {
               this.toggleShift();
               Keyboard.toggleClassOnNodes('.keyboard-shift', 'keyboard-key-active');
             }
@@ -349,7 +349,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'ShiftRight') {
+            if (!event.repeat && event.code === 'ShiftRight') {
               this.toggleShift();
               Keyboard.toggleClassOnNodes('.keyboard-shift', 'keyboard-key-active');
             }
@@ -376,7 +376,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.key === 'Alt' && !this.isAltActive) {
+            if (!event.repeat && event.key === 'Alt' && !this.isAltActive) {
               this.toggleAlt();
               event.preventDefault();
               Keyboard.toggleClassOnNodes('.keyboard-alt', 'keyboard-key-active');
@@ -405,7 +405,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.key === 'Alt' && !this.isAltActive) {
+            if (!event.repeat && event.key === 'Alt' && !this.isAltActive) {
               event.preventDefault();
               this.toggleAlt();
               Keyboard.toggleClassOnNodes('.keyboard-alt', 'keyboard-key-active');
@@ -424,7 +424,7 @@ class Keyboard {
           });
 
           document.addEventListener('keydown', (event) => {
-            if (event.code === 'MetaLeft' || event.code === 'MetaRight') {
+            if (!event.repeat && event.code === 'MetaLeft' || event.code === 'MetaRight') {
               keyElement.classList.add('keyboard-key-active');
             }
           });
