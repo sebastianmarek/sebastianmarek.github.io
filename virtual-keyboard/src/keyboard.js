@@ -570,7 +570,7 @@ class Keyboard {
               if (this.isCapsLockActive || this.isShiftActive) {
                 this.value += key.toUpperCase();
               } else {
-                key.toLowerCase();
+                this.value += key.toLowerCase();
               }
               this.updateValue('.text-input');
             });
