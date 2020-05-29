@@ -43,10 +43,16 @@
 
 .keyboard-key:active {
     background: #141414;
+    -webkit-box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
+    -moz-box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
+    box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
 }
 
 .keyboard-key-active {
     background: #141414;
+    -webkit-box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
+    -moz-box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
+    box-shadow: inset 0px 3px 0px 0px rgb(158, 158, 158);
 }
 
 .keyboard-double-width {
