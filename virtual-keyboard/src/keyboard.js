@@ -615,7 +615,12 @@ class Keyboard {
   }
 
   toggleShift() {
-    this.isShiftActive = !this.isShiftActive;
+    this.isShiftActive = !this.isShiftActive;    
+    this.letterKeys.forEach((key) => {
+      const keyElement = key;
+      const label = key.textContent;
+      keyElement.textContent = this.isShiftActive ? label.toUpperCase() : label.toLowerCase();
+    });
   }
 
   static generateKeyIconCode(iconClass) {
